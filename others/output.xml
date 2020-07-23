@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200706 09:10:07.411" rpa="false">
+<suite id="s1" name="Tests" source="C:\Users\indra\OneDrive\Área de Trabalho\Test PredictCovid\tests\tests.robot">
+<test id="s1-t1" name="Registration - Open">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200706 09:10:07.782" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200706 09:10:07.781" endtime="20200706 09:10:13.481"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:10:13.481" endtime="20200706 09:10:13.483"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:07.780" endtime="20200706 09:10:13.483"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:10:13.485" endtime="20200706 09:10:13.808"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:13.484" endtime="20200706 09:10:13.809"></status>
+</kw>
+<kw name="Click CADASTRE-SE" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:10:18.816" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:10:13.813" endtime="20200706 09:10:18.816"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/users/cadastrar/']</arg>
+</arguments>
+<msg timestamp="20200706 09:10:18.817" level="INFO">Clicking element 'css:a[href='/users/cadastrar/']'.</msg>
+<status status="PASS" starttime="20200706 09:10:18.816" endtime="20200706 09:10:21.511"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:13.811" endtime="20200706 09:10:21.511"></status>
+</kw>
+<kw name="Wait load registration page" library="registration_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:name</arg>
+<arg>timeout= 20</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:10:21.513" endtime="20200706 09:10:21.682"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:21.512" endtime="20200706 09:10:21.682"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200706 09:10:25.685" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200706 09:10:21.684" endtime="20200706 09:10:25.685"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200706 09:10:25.685" endtime="20200706 09:10:29.033"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:21.683" endtime="20200706 09:10:29.034"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:07.779" endtime="20200706 09:10:29.035" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Registration - Open login">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200706 09:10:29.045" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200706 09:10:29.045" endtime="20200706 09:10:34.467"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:10:34.467" endtime="20200706 09:10:34.469"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:29.044" endtime="20200706 09:10:34.470"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:10:34.472" endtime="20200706 09:10:34.761"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:34.471" endtime="20200706 09:10:34.762"></status>
+</kw>
+<kw name="Click CADASTRE-SE" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:10:39.767" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:10:34.766" endtime="20200706 09:10:39.768"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/users/cadastrar/']</arg>
+</arguments>
+<msg timestamp="20200706 09:10:39.770" level="INFO">Clicking element 'css:a[href='/users/cadastrar/']'.</msg>
+<status status="PASS" starttime="20200706 09:10:39.769" endtime="20200706 09:10:42.471"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:34.764" endtime="20200706 09:10:42.471"></status>
+</kw>
+<kw name="Wait load registration page" library="registration_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:name</arg>
+<arg>timeout= 20</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:10:42.474" endtime="20200706 09:10:42.650"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:42.472" endtime="20200706 09:10:42.650"></status>
+</kw>
+<kw name="Click registration_page.ACESSE" library="registration_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:10:47.653" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:10:42.652" endtime="20200706 09:10:47.653"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/users/login/']</arg>
+</arguments>
+<msg timestamp="20200706 09:10:47.654" level="INFO">Clicking element 'css:a[href='/users/login/']'.</msg>
+<status status="PASS" starttime="20200706 09:10:47.653" endtime="20200706 09:10:49.054"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:42.651" endtime="20200706 09:10:49.055"></status>
+</kw>
+<kw name="Wait load login page" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:10:49.058" endtime="20200706 09:10:49.185"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:49.057" endtime="20200706 09:10:49.185"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200706 09:10:53.191" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200706 09:10:49.188" endtime="20200706 09:10:53.192"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200706 09:10:53.226" endtime="20200706 09:10:56.016"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:49.187" endtime="20200706 09:10:56.016"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:29.042" endtime="20200706 09:10:56.017" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Login - Successfull">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200706 09:10:56.024" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200706 09:10:56.023" endtime="20200706 09:11:02.461"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:11:02.462" endtime="20200706 09:11:02.464"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:56.023" endtime="20200706 09:11:02.464"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:11:02.467" endtime="20200706 09:11:03.911"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:02.465" endtime="20200706 09:11:03.912"></status>
+</kw>
+<kw name="Click main_page.ACESSE" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:11:08.917" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:11:03.916" endtime="20200706 09:11:08.917"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<msg timestamp="20200706 09:11:08.919" level="INFO">Clicking element 'css:a[href='/home/']'.</msg>
+<status status="PASS" starttime="20200706 09:11:08.918" endtime="20200706 09:11:15.150"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:03.914" endtime="20200706 09:11:15.150"></status>
+</kw>
+<kw name="Wait load login page" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:11:15.151" endtime="20200706 09:11:15.289"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:15.151" endtime="20200706 09:11:15.290"></status>
+</kw>
+<kw name="Input email" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>indra.araujo.santos@gmail.com</arg>
+</arguments>
+<msg timestamp="20200706 09:11:15.291" level="INFO">Typing text 'indra.araujo.santos@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200706 09:11:15.291" endtime="20200706 09:11:15.732"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:15.290" endtime="20200706 09:11:15.732"></status>
+</kw>
+<kw name="Input password" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:password</arg>
+<arg>Universe19</arg>
+</arguments>
+<msg timestamp="20200706 09:11:15.734" level="INFO">Typing text 'Universe19' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20200706 09:11:15.733" endtime="20200706 09:11:15.961"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:15.733" endtime="20200706 09:11:15.962"></status>
+</kw>
+<kw name="Click LOGIN" library="login_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:11:20.964" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:11:15.964" endtime="20200706 09:11:20.964"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:btnLogin</arg>
+</arguments>
+<msg timestamp="20200706 09:11:20.966" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20200706 09:11:20.965" endtime="20200706 09:11:22.262"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:15.963" endtime="20200706 09:11:22.263"></status>
+</kw>
+<kw name="Wait load home page" library="home_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/prediction/nova-analise/']</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:11:22.268" endtime="20200706 09:11:22.362"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:22.266" endtime="20200706 09:11:22.363"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200706 09:11:26.371" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200706 09:11:22.369" endtime="20200706 09:11:26.371"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200706 09:11:26.371" endtime="20200706 09:11:29.707"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:22.367" endtime="20200706 09:11:29.708"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:10:56.022" endtime="20200706 09:11:29.710" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Login - Wrong email">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200706 09:11:29.721" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200706 09:11:29.720" endtime="20200706 09:11:37.153"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:11:37.153" endtime="20200706 09:11:37.157"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:29.718" endtime="20200706 09:11:37.158"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:11:37.160" endtime="20200706 09:11:37.536"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:37.159" endtime="20200706 09:11:37.539"></status>
+</kw>
+<kw name="Click main_page.ACESSE" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:11:42.546" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:11:37.544" endtime="20200706 09:11:42.546"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<msg timestamp="20200706 09:11:42.548" level="INFO">Clicking element 'css:a[href='/home/']'.</msg>
+<status status="PASS" starttime="20200706 09:11:42.547" endtime="20200706 09:11:51.269"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:37.542" endtime="20200706 09:11:51.269"></status>
+</kw>
+<kw name="Wait load login page" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:11:51.272" endtime="20200706 09:11:51.329"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:51.271" endtime="20200706 09:11:51.329"></status>
+</kw>
+<kw name="Input email" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>indra.araujo.santos@gmail.com</arg>
+</arguments>
+<msg timestamp="20200706 09:11:51.333" level="INFO">Typing text 'indra.araujo.santos@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200706 09:11:51.332" endtime="20200706 09:11:51.806"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:51.331" endtime="20200706 09:11:51.807"></status>
+</kw>
+<kw name="Input password" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:password</arg>
+<arg>Universe19</arg>
+</arguments>
+<msg timestamp="20200706 09:11:51.812" level="INFO">Typing text 'Universe19' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20200706 09:11:51.811" endtime="20200706 09:11:52.220"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:51.809" endtime="20200706 09:11:52.222"></status>
+</kw>
+<kw name="Click LOGIN" library="login_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:11:57.227" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:11:52.226" endtime="20200706 09:11:57.227"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:btnLogin</arg>
+</arguments>
+<msg timestamp="20200706 09:11:57.229" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20200706 09:11:57.228" endtime="20200706 09:12:02.412"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:11:52.224" endtime="20200706 09:12:02.413"></status>
+</kw>
+<kw name="Alert recaptcha message" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>class:toast-error</arg>
+<arg>timeout= 20</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200706 09:12:26.825" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200706 09:12:23.303" endtime="20200706 09:12:26.826"></status>
+</kw>
+<msg timestamp="20200706 09:12:26.992" level="FAIL">Element 'class:toast-error' not visible after 20 seconds.</msg>
+<status status="FAIL" starttime="20200706 09:12:02.417" endtime="20200706 09:12:26.993"></status>
+</kw>
+<status status="FAIL" starttime="20200706 09:12:02.416" endtime="20200706 09:12:26.997"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200706 09:12:31.016" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200706 09:12:27.013" endtime="20200706 09:12:31.017"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200706 09:12:31.018" endtime="20200706 09:12:33.354"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:12:27.009" endtime="20200706 09:12:33.355"></status>
+</kw>
+<status status="FAIL" starttime="20200706 09:11:29.716" endtime="20200706 09:12:33.357" critical="yes">Element 'class:toast-error' not visible after 20 seconds.</status>
+</test>
+<test id="s1-t5" name="Login - Wrong password">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200706 09:12:33.371" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200706 09:12:33.370" endtime="20200706 09:12:41.337"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:12:41.337" endtime="20200706 09:12:41.340"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:12:33.367" endtime="20200706 09:12:41.340"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:12:41.509" endtime="20200706 09:12:41.571"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:12:41.509" endtime="20200706 09:12:41.571"></status>
+</kw>
+<kw name="Click main_page.ACESSE" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:12:46.576" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:12:41.574" endtime="20200706 09:12:46.577"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<msg timestamp="20200706 09:12:46.579" level="INFO">Clicking element 'css:a[href='/home/']'.</msg>
+<status status="PASS" starttime="20200706 09:12:46.578" endtime="20200706 09:12:52.713"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:12:41.573" endtime="20200706 09:12:52.713"></status>
+</kw>
+<kw name="Wait load login page" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:12:52.716" endtime="20200706 09:12:52.887"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:12:52.715" endtime="20200706 09:12:52.887"></status>
+</kw>
+<kw name="Input email" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>indra.araujo.santos@gmail.com</arg>
+</arguments>
+<msg timestamp="20200706 09:12:52.888" level="INFO">Typing text 'indra.araujo.santos@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200706 09:12:52.888" endtime="20200706 09:12:53.139"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:12:52.888" endtime="20200706 09:12:53.139"></status>
+</kw>
+<kw name="Input password" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:password</arg>
+<arg>Universe19</arg>
+</arguments>
+<msg timestamp="20200706 09:12:53.141" level="INFO">Typing text 'Universe19' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20200706 09:12:53.141" endtime="20200706 09:12:53.362"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:12:53.140" endtime="20200706 09:12:53.363"></status>
+</kw>
+<kw name="Click LOGIN" library="login_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:12:58.365" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:12:53.364" endtime="20200706 09:12:58.366"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:btnLogin</arg>
+</arguments>
+<msg timestamp="20200706 09:12:58.368" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20200706 09:12:58.367" endtime="20200706 09:12:59.556"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:12:53.363" endtime="20200706 09:12:59.557"></status>
+</kw>
+<kw name="Alert recaptcha message" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>class:toast-error</arg>
+<arg>timeout= 20</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200706 09:13:21.128" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200706 09:13:20.542" endtime="20200706 09:13:21.129"></status>
+</kw>
+<msg timestamp="20200706 09:13:21.132" level="FAIL">Element 'class:toast-error' not visible after 20 seconds.</msg>
+<status status="FAIL" starttime="20200706 09:12:59.561" endtime="20200706 09:13:21.133"></status>
+</kw>
+<status status="FAIL" starttime="20200706 09:12:59.560" endtime="20200706 09:13:21.133"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200706 09:13:25.140" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200706 09:13:21.138" endtime="20200706 09:13:25.141"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200706 09:13:25.141" endtime="20200706 09:13:27.413"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:21.137" endtime="20200706 09:13:27.414"></status>
+</kw>
+<status status="FAIL" starttime="20200706 09:12:33.364" endtime="20200706 09:13:27.416" critical="yes">Element 'class:toast-error' not visible after 20 seconds.</status>
+</test>
+<test id="s1-t6" name="Login - No email">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200706 09:13:27.430" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200706 09:13:27.428" endtime="20200706 09:13:33.430"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:13:33.431" endtime="20200706 09:13:33.433"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:27.425" endtime="20200706 09:13:33.433"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:13:33.435" endtime="20200706 09:13:33.725"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:33.434" endtime="20200706 09:13:33.726"></status>
+</kw>
+<kw name="Click main_page.ACESSE" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:13:38.731" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:13:33.730" endtime="20200706 09:13:38.732"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<msg timestamp="20200706 09:13:38.735" level="INFO">Clicking element 'css:a[href='/home/']'.</msg>
+<status status="PASS" starttime="20200706 09:13:38.733" endtime="20200706 09:13:42.133"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:33.729" endtime="20200706 09:13:42.133"></status>
+</kw>
+<kw name="Wait load login page" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:13:42.134" endtime="20200706 09:13:42.168"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:42.134" endtime="20200706 09:13:42.168"></status>
+</kw>
+<kw name="Input password" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:password</arg>
+<arg>Universe19</arg>
+</arguments>
+<msg timestamp="20200706 09:13:42.170" level="INFO">Typing text 'Universe19' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20200706 09:13:42.170" endtime="20200706 09:13:42.344"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:42.169" endtime="20200706 09:13:42.344"></status>
+</kw>
+<kw name="Click LOGIN" library="login_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:13:47.346" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:13:42.345" endtime="20200706 09:13:47.346"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:btnLogin</arg>
+</arguments>
+<msg timestamp="20200706 09:13:47.347" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20200706 09:13:47.346" endtime="20200706 09:13:47.481"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:42.345" endtime="20200706 09:13:47.481"></status>
+</kw>
+<kw name="Alert no fill message" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email-error</arg>
+<arg>timeout= 20</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:13:47.484" endtime="20200706 09:13:47.532"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Preencha esse campo</arg>
+</arguments>
+<msg timestamp="20200706 09:13:47.568" level="INFO">Current page contains text 'Preencha esse campo'.</msg>
+<status status="PASS" starttime="20200706 09:13:47.532" endtime="20200706 09:13:47.569"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:47.483" endtime="20200706 09:13:47.570"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200706 09:13:51.576" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200706 09:13:47.573" endtime="20200706 09:13:51.576"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200706 09:13:51.577" endtime="20200706 09:13:53.858"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:47.572" endtime="20200706 09:13:53.859"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:27.422" endtime="20200706 09:13:53.860" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Login - No password">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200706 09:13:53.872" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200706 09:13:53.871" endtime="20200706 09:13:59.740"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:13:59.740" endtime="20200706 09:13:59.743"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:53.869" endtime="20200706 09:13:59.744"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:13:59.746" endtime="20200706 09:14:00.113"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:13:59.745" endtime="20200706 09:14:00.115"></status>
+</kw>
+<kw name="Click main_page.ACESSE" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:14:05.124" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:14:00.121" endtime="20200706 09:14:05.125"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<msg timestamp="20200706 09:14:05.128" level="INFO">Clicking element 'css:a[href='/home/']'.</msg>
+<status status="PASS" starttime="20200706 09:14:05.126" endtime="20200706 09:14:07.173"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:14:00.118" endtime="20200706 09:14:07.173"></status>
+</kw>
+<kw name="Wait load login page" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:14:07.178" endtime="20200706 09:14:07.368"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:14:07.177" endtime="20200706 09:14:07.368"></status>
+</kw>
+<kw name="Input email" library="login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>indra.araujo.santos@gmail.com</arg>
+</arguments>
+<msg timestamp="20200706 09:14:07.370" level="INFO">Typing text 'indra.araujo.santos@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200706 09:14:07.370" endtime="20200706 09:14:07.619"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:14:07.369" endtime="20200706 09:14:07.619"></status>
+</kw>
+<kw name="Click LOGIN" library="login_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:14:12.622" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:14:07.621" endtime="20200706 09:14:12.622"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:btnLogin</arg>
+</arguments>
+<msg timestamp="20200706 09:14:12.622" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20200706 09:14:12.622" endtime="20200706 09:14:12.720"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:14:07.620" endtime="20200706 09:14:12.720"></status>
+</kw>
+<kw name="Alert no fill message" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email-error</arg>
+<arg>timeout= 20</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200706 09:14:34.234" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200706 09:14:33.710" endtime="20200706 09:14:34.234"></status>
+</kw>
+<msg timestamp="20200706 09:14:34.238" level="FAIL">Element 'id:email-error' not visible after 20 seconds.</msg>
+<status status="FAIL" starttime="20200706 09:14:12.722" endtime="20200706 09:14:34.239"></status>
+</kw>
+<status status="FAIL" starttime="20200706 09:14:12.721" endtime="20200706 09:14:34.240"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200706 09:14:38.247" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200706 09:14:34.245" endtime="20200706 09:14:38.247"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200706 09:14:38.248" endtime="20200706 09:14:40.668"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:14:34.243" endtime="20200706 09:14:40.669"></status>
+</kw>
+<status status="FAIL" starttime="20200706 09:13:53.866" endtime="20200706 09:14:40.671" critical="yes">Element 'id:email-error' not visible after 20 seconds.</status>
+</test>
+<test id="s1-t8" name="Login - No Input">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200706 09:14:40.683" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200706 09:14:40.682" endtime="20200706 09:15:01.292"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:15:01.293" endtime="20200706 09:15:01.296"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:14:40.680" endtime="20200706 09:15:01.296"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:15:01.299" endtime="20200706 09:15:01.644"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:01.297" endtime="20200706 09:15:01.645"></status>
+</kw>
+<kw name="Click main_page.ACESSE" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:15:06.652" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:15:01.650" endtime="20200706 09:15:06.652"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<msg timestamp="20200706 09:15:06.653" level="INFO">Clicking element 'css:a[href='/home/']'.</msg>
+<status status="PASS" starttime="20200706 09:15:06.653" endtime="20200706 09:15:10.262"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:01.648" endtime="20200706 09:15:10.263"></status>
+</kw>
+<kw name="Wait load login page" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:15:10.264" endtime="20200706 09:15:10.295"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:10.263" endtime="20200706 09:15:10.295"></status>
+</kw>
+<kw name="Click LOGIN" library="login_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:15:15.299" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:15:10.296" endtime="20200706 09:15:15.300"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:btnLogin</arg>
+</arguments>
+<msg timestamp="20200706 09:15:15.302" level="INFO">Clicking element 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20200706 09:15:15.301" endtime="20200706 09:15:15.562"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:10.296" endtime="20200706 09:15:15.563"></status>
+</kw>
+<kw name="Alert no fill message" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email-error</arg>
+<arg>timeout= 20</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:15:15.567" endtime="20200706 09:15:15.675"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Preencha esse campo</arg>
+</arguments>
+<msg timestamp="20200706 09:15:15.738" level="INFO">Current page contains text 'Preencha esse campo'.</msg>
+<status status="PASS" starttime="20200706 09:15:15.676" endtime="20200706 09:15:15.740"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:15.565" endtime="20200706 09:15:15.740"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200706 09:15:19.746" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200706 09:15:15.745" endtime="20200706 09:15:19.747"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200706 09:15:19.747" endtime="20200706 09:15:22.015"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:15.743" endtime="20200706 09:15:22.015"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:14:40.677" endtime="20200706 09:15:22.018" critical="yes"></status>
+</test>
+<test id="s1-t9" name="Login - no registration">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200706 09:15:22.031" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200706 09:15:22.030" endtime="20200706 09:15:32.171"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:15:32.171" endtime="20200706 09:15:32.173"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:22.028" endtime="20200706 09:15:32.174"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:15:32.175" endtime="20200706 09:15:32.788"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:32.175" endtime="20200706 09:15:32.789"></status>
+</kw>
+<kw name="Click main_page.ACESSE" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200706 09:15:37.796" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200706 09:15:32.793" endtime="20200706 09:15:37.796"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<msg timestamp="20200706 09:15:37.798" level="INFO">Clicking element 'css:a[href='/home/']'.</msg>
+<status status="PASS" starttime="20200706 09:15:37.797" endtime="20200706 09:15:40.040"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:32.792" endtime="20200706 09:15:40.041"></status>
+</kw>
+<kw name="Wait load login page" library="login_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:email</arg>
+<arg>timeout=5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:15:40.042" endtime="20200706 09:15:40.079"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:40.042" endtime="20200706 09:15:40.079"></status>
+</kw>
+<kw name="Click CADASTRAR" library="login_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200706 09:15:42.082" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200706 09:15:40.081" endtime="20200706 09:15:42.082"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:a[href='/users/cadastrar/']</arg>
+</arguments>
+<msg timestamp="20200706 09:15:42.084" level="INFO">Clicking element 'css:a[href='/users/cadastrar/']'.</msg>
+<status status="PASS" starttime="20200706 09:15:42.083" endtime="20200706 09:15:43.500"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:40.080" endtime="20200706 09:15:43.501"></status>
+</kw>
+<kw name="Wait load registration page" library="registration_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>id:name</arg>
+<arg>timeout= 20</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:15:43.505" endtime="20200706 09:15:43.637"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:43.504" endtime="20200706 09:15:43.637"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200706 09:15:47.641" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200706 09:15:43.639" endtime="20200706 09:15:47.642"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200706 09:15:47.643" endtime="20200706 09:15:49.944"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:43.638" endtime="20200706 09:15:49.945"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:22.025" endtime="20200706 09:15:49.947" critical="yes"></status>
+</test>
+<test id="s1-t10" name="Feedback - send">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200706 09:15:49.962" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200706 09:15:49.961" endtime="20200706 09:15:55.093"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200706 09:15:55.094" endtime="20200706 09:15:55.096"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:15:49.959" endtime="20200706 09:15:55.096"></status>
+</kw>
+<kw name="Wait load home page" library="home_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/prediction/nova-analise/']</arg>
+<arg>timeout=5</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200706 09:16:00.649" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200706 09:16:00.354" endtime="20200706 09:16:00.649"></status>
+</kw>
+<msg timestamp="20200706 09:16:00.651" level="FAIL">Element 'css:a[href='/prediction/nova-analise/']' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20200706 09:15:55.097" endtime="20200706 09:16:00.651"></status>
+</kw>
+<status status="FAIL" starttime="20200706 09:15:55.097" endtime="20200706 09:16:00.651"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200706 09:16:04.654" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200706 09:16:00.653" endtime="20200706 09:16:04.655"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200706 09:16:04.655" endtime="20200706 09:16:06.929"></status>
+</kw>
+<status status="PASS" starttime="20200706 09:16:00.652" endtime="20200706 09:16:06.930"></status>
+</kw>
+<status status="FAIL" starttime="20200706 09:15:49.954" endtime="20200706 09:16:06.931" critical="yes">Element 'css:a[href='/prediction/nova-analise/']' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20200706 09:10:07.414" endtime="20200706 09:16:06.945"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="4">Critical Tests</stat>
+<stat pass="6" fail="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="4" id="s1" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

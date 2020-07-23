@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200723 19:15:31.215" rpa="false">
+<suite id="s1" name="Colaborador Test" source="C:\Users\indra\OneDrive\Área de Trabalho\Test PredictCovid\tests\colaborador_test.robot">
+<test id="s1-t1" name="Colaborador - send">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 19:15:31.447" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200723 19:15:31.446" endtime="20200723 19:15:37.319"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:15:37.319" endtime="20200723 19:15:37.321"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:31.445" endtime="20200723 19:15:37.321"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:15:37.322" endtime="20200723 19:15:37.584"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:37.322" endtime="20200723 19:15:37.584"></status>
+</kw>
+<kw name="Input nome" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:inputName</arg>
+<arg>indra</arg>
+</arguments>
+<msg timestamp="20200723 19:15:37.585" level="INFO">Typing text 'indra' into text field 'id:inputName'.</msg>
+<status status="PASS" starttime="20200723 19:15:37.585" endtime="20200723 19:15:37.705"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:37.585" endtime="20200723 19:15:37.705"></status>
+</kw>
+<kw name="Input email" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:inputEmail</arg>
+<arg>indra.araujo.santos@gmail.com</arg>
+</arguments>
+<msg timestamp="20200723 19:15:37.706" level="INFO">Typing text 'indra.araujo.santos@gmail.com' into text field 'id:inputEmail'.</msg>
+<status status="PASS" starttime="20200723 19:15:37.706" endtime="20200723 19:15:37.908"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:37.706" endtime="20200723 19:15:37.908"></status>
+</kw>
+<kw name="Input mensagem" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:textareaMessage</arg>
+<arg>quero ser colaboradora</arg>
+</arguments>
+<msg timestamp="20200723 19:15:37.910" level="INFO">Typing text 'quero ser colaboradora' into text field 'id:textareaMessage'.</msg>
+<status status="PASS" starttime="20200723 19:15:37.910" endtime="20200723 19:15:38.049"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:37.909" endtime="20200723 19:15:38.049"></status>
+</kw>
+<kw name="Click ENVIAR" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200723 19:15:43.051" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200723 19:15:38.050" endtime="20200723 19:15:43.051"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:buttonContact</arg>
+</arguments>
+<msg timestamp="20200723 19:15:43.051" level="INFO">Clicking element 'id:buttonContact'.</msg>
+<status status="PASS" starttime="20200723 19:15:43.051" endtime="20200723 19:15:43.122"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:38.050" endtime="20200723 19:15:43.122"></status>
+</kw>
+<kw name="Wait sent message" library="main_page">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Mensagem enviada com sucesso.</arg>
+</arguments>
+<msg timestamp="20200723 19:15:43.146" level="INFO">Current page contains text 'Mensagem enviada com sucesso.'.</msg>
+<status status="PASS" starttime="20200723 19:15:43.123" endtime="20200723 19:15:43.146"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:43.123" endtime="20200723 19:15:43.147"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200723 19:15:47.150" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200723 19:15:43.148" endtime="20200723 19:15:47.150"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200723 19:15:47.150" endtime="20200723 19:15:49.706"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:43.147" endtime="20200723 19:15:49.706"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:31.444" endtime="20200723 19:15:49.707" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Colaborador - no nome">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 19:15:49.710" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200723 19:15:49.710" endtime="20200723 19:15:54.045"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:15:54.046" endtime="20200723 19:15:54.047"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:49.709" endtime="20200723 19:15:54.047"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:15:54.048" endtime="20200723 19:15:54.299"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:54.048" endtime="20200723 19:15:54.299"></status>
+</kw>
+<kw name="Input email" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:inputEmail</arg>
+<arg>indra.araujo.santos@gmail.com</arg>
+</arguments>
+<msg timestamp="20200723 19:15:54.301" level="INFO">Typing text 'indra.araujo.santos@gmail.com' into text field 'id:inputEmail'.</msg>
+<status status="PASS" starttime="20200723 19:15:54.301" endtime="20200723 19:15:54.495"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:54.300" endtime="20200723 19:15:54.496"></status>
+</kw>
+<kw name="Input mensagem" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:textareaMessage</arg>
+<arg>quero ser colaboradora</arg>
+</arguments>
+<msg timestamp="20200723 19:15:54.497" level="INFO">Typing text 'quero ser colaboradora' into text field 'id:textareaMessage'.</msg>
+<status status="PASS" starttime="20200723 19:15:54.496" endtime="20200723 19:15:54.680"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:54.496" endtime="20200723 19:15:54.680"></status>
+</kw>
+<kw name="Click ENVIAR" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200723 19:15:59.685" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200723 19:15:54.682" endtime="20200723 19:15:59.685"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:buttonContact</arg>
+</arguments>
+<msg timestamp="20200723 19:15:59.685" level="INFO">Clicking element 'id:buttonContact'.</msg>
+<status status="PASS" starttime="20200723 19:15:59.685" endtime="20200723 19:15:59.739"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:54.682" endtime="20200723 19:15:59.740"></status>
+</kw>
+<kw name="Wait input alert" library="main_page">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Este campo é obrigatório.</arg>
+</arguments>
+<msg timestamp="20200723 19:15:59.761" level="INFO">Current page contains text 'Este campo é obrigatório.'.</msg>
+<status status="PASS" starttime="20200723 19:15:59.741" endtime="20200723 19:15:59.761"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:59.740" endtime="20200723 19:15:59.761"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200723 19:16:03.764" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200723 19:15:59.763" endtime="20200723 19:16:03.764"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200723 19:16:03.764" endtime="20200723 19:16:05.920"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:59.762" endtime="20200723 19:16:05.920"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:15:49.708" endtime="20200723 19:16:05.921" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Colaborador - no email">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 19:16:05.925" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200723 19:16:05.925" endtime="20200723 19:16:10.583"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:16:10.583" endtime="20200723 19:16:10.584"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:05.925" endtime="20200723 19:16:10.585"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:16:10.585" endtime="20200723 19:16:10.837"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:10.585" endtime="20200723 19:16:10.837"></status>
+</kw>
+<kw name="Input nome" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:inputName</arg>
+<arg>indra</arg>
+</arguments>
+<msg timestamp="20200723 19:16:10.838" level="INFO">Typing text 'indra' into text field 'id:inputName'.</msg>
+<status status="PASS" starttime="20200723 19:16:10.838" endtime="20200723 19:16:10.967"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:10.838" endtime="20200723 19:16:10.968"></status>
+</kw>
+<kw name="Input mensagem" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:textareaMessage</arg>
+<arg>quero ser colaboradora</arg>
+</arguments>
+<msg timestamp="20200723 19:16:10.969" level="INFO">Typing text 'quero ser colaboradora' into text field 'id:textareaMessage'.</msg>
+<status status="PASS" starttime="20200723 19:16:10.969" endtime="20200723 19:16:11.101"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:10.968" endtime="20200723 19:16:11.101"></status>
+</kw>
+<kw name="Click ENVIAR" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200723 19:16:16.104" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200723 19:16:11.102" endtime="20200723 19:16:16.104"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:buttonContact</arg>
+</arguments>
+<msg timestamp="20200723 19:16:16.104" level="INFO">Clicking element 'id:buttonContact'.</msg>
+<status status="PASS" starttime="20200723 19:16:16.104" endtime="20200723 19:16:16.159"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:11.102" endtime="20200723 19:16:16.159"></status>
+</kw>
+<kw name="Wait input alert" library="main_page">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Este campo é obrigatório.</arg>
+</arguments>
+<msg timestamp="20200723 19:16:16.181" level="INFO">Current page contains text 'Este campo é obrigatório.'.</msg>
+<status status="PASS" starttime="20200723 19:16:16.160" endtime="20200723 19:16:16.181"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:16.159" endtime="20200723 19:16:16.181"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200723 19:16:20.184" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200723 19:16:16.183" endtime="20200723 19:16:20.184"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200723 19:16:20.184" endtime="20200723 19:16:22.331"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:16.182" endtime="20200723 19:16:22.332"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:05.924" endtime="20200723 19:16:22.334" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Colaborador - no mensagem">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 19:16:22.340" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200723 19:16:22.339" endtime="20200723 19:16:28.242"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:16:28.242" endtime="20200723 19:16:28.244"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:22.339" endtime="20200723 19:16:28.244"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:16:28.245" endtime="20200723 19:16:28.280"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:28.245" endtime="20200723 19:16:28.280"></status>
+</kw>
+<kw name="Input nome" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:inputName</arg>
+<arg>indra</arg>
+</arguments>
+<msg timestamp="20200723 19:16:28.281" level="INFO">Typing text 'indra' into text field 'id:inputName'.</msg>
+<status status="PASS" starttime="20200723 19:16:28.281" endtime="20200723 19:16:28.403"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:28.281" endtime="20200723 19:16:28.403"></status>
+</kw>
+<kw name="Input email" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:inputEmail</arg>
+<arg>indra.araujo.santos@gmail.com</arg>
+</arguments>
+<msg timestamp="20200723 19:16:28.405" level="INFO">Typing text 'indra.araujo.santos@gmail.com' into text field 'id:inputEmail'.</msg>
+<status status="PASS" starttime="20200723 19:16:28.404" endtime="20200723 19:16:28.586"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:28.404" endtime="20200723 19:16:28.587"></status>
+</kw>
+<kw name="Click ENVIAR" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200723 19:16:33.588" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200723 19:16:28.587" endtime="20200723 19:16:33.588"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:buttonContact</arg>
+</arguments>
+<msg timestamp="20200723 19:16:33.588" level="INFO">Clicking element 'id:buttonContact'.</msg>
+<status status="PASS" starttime="20200723 19:16:33.588" endtime="20200723 19:16:33.637"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:28.587" endtime="20200723 19:16:33.637"></status>
+</kw>
+<kw name="Wait input alert" library="main_page">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Este campo é obrigatório.</arg>
+</arguments>
+<msg timestamp="20200723 19:16:33.658" level="INFO">Current page contains text 'Este campo é obrigatório.'.</msg>
+<status status="PASS" starttime="20200723 19:16:33.638" endtime="20200723 19:16:33.658"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:33.638" endtime="20200723 19:16:33.659"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200723 19:16:37.661" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200723 19:16:33.660" endtime="20200723 19:16:37.661"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200723 19:16:37.661" endtime="20200723 19:16:39.915"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:33.660" endtime="20200723 19:16:39.915"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:22.337" endtime="20200723 19:16:39.916" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Colaborador - no input">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 19:16:39.920" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200723 19:16:39.920" endtime="20200723 19:16:46.598"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:16:46.598" endtime="20200723 19:16:46.599"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:39.920" endtime="20200723 19:16:46.600"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:16:46.601" endtime="20200723 19:16:46.845"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:46.600" endtime="20200723 19:16:46.845"></status>
+</kw>
+<kw name="Click ENVIAR" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200723 19:16:51.848" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200723 19:16:46.846" endtime="20200723 19:16:51.848"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:buttonContact</arg>
+</arguments>
+<msg timestamp="20200723 19:16:51.848" level="INFO">Clicking element 'id:buttonContact'.</msg>
+<status status="PASS" starttime="20200723 19:16:51.848" endtime="20200723 19:16:51.919"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:46.846" endtime="20200723 19:16:51.919"></status>
+</kw>
+<kw name="Wait input alert" library="main_page">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Este campo é obrigatório.</arg>
+</arguments>
+<msg timestamp="20200723 19:16:51.948" level="INFO">Current page contains text 'Este campo é obrigatório.'.</msg>
+<status status="PASS" starttime="20200723 19:16:51.922" endtime="20200723 19:16:51.949"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:51.922" endtime="20200723 19:16:51.949"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200723 19:16:55.953" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200723 19:16:51.951" endtime="20200723 19:16:55.953"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200723 19:16:55.953" endtime="20200723 19:16:58.116"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:51.950" endtime="20200723 19:16:58.116"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:39.919" endtime="20200723 19:16:58.117" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Colaborador - email invalid">
+<kw name="Open predictcovid" library="hooks" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://predictcovid.com.br/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200723 19:16:58.120" level="INFO">Opening browser 'chrome' to base url 'https://predictcovid.com.br/'.</msg>
+<status status="PASS" starttime="20200723 19:16:58.120" endtime="20200723 19:17:03.407"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:17:03.408" endtime="20200723 19:17:03.409"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:58.120" endtime="20200723 19:17:03.410"></status>
+</kw>
+<kw name="Wait load main page" library="main_page">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:a[href='/home/']</arg>
+</arguments>
+<status status="PASS" starttime="20200723 19:17:03.411" endtime="20200723 19:17:03.678"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:17:03.411" endtime="20200723 19:17:03.678"></status>
+</kw>
+<kw name="Input nome" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:inputName</arg>
+<arg>indra</arg>
+</arguments>
+<msg timestamp="20200723 19:17:03.680" level="INFO">Typing text 'indra' into text field 'id:inputName'.</msg>
+<status status="PASS" starttime="20200723 19:17:03.680" endtime="20200723 19:17:03.819"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:17:03.679" endtime="20200723 19:17:03.819"></status>
+</kw>
+<kw name="Input email invalid" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:inputEmail</arg>
+<arg>du</arg>
+</arguments>
+<msg timestamp="20200723 19:17:03.820" level="INFO">Typing text 'du' into text field 'id:inputEmail'.</msg>
+<status status="PASS" starttime="20200723 19:17:03.820" endtime="20200723 19:17:03.930"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:17:03.820" endtime="20200723 19:17:03.930"></status>
+</kw>
+<kw name="Input mensagem" library="main_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:textareaMessage</arg>
+<arg>quero ser colaboradora</arg>
+</arguments>
+<msg timestamp="20200723 19:17:03.931" level="INFO">Typing text 'quero ser colaboradora' into text field 'id:textareaMessage'.</msg>
+<status status="PASS" starttime="20200723 19:17:03.931" endtime="20200723 19:17:04.074"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:17:03.931" endtime="20200723 19:17:04.074"></status>
+</kw>
+<kw name="Click ENVIAR" library="main_page">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200723 19:17:09.077" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200723 19:17:04.075" endtime="20200723 19:17:09.077"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:buttonContact</arg>
+</arguments>
+<msg timestamp="20200723 19:17:09.077" level="INFO">Clicking element 'id:buttonContact'.</msg>
+<status status="PASS" starttime="20200723 19:17:09.077" endtime="20200723 19:17:09.162"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:17:04.075" endtime="20200723 19:17:09.162"></status>
+</kw>
+<kw name="Wait invalid alert" library="main_page">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Email inválido.</arg>
+</arguments>
+<msg timestamp="20200723 19:17:09.351" level="INFO">Current page contains text 'Email inválido.'.</msg>
+<status status="PASS" starttime="20200723 19:17:09.163" endtime="20200723 19:17:09.351"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:17:09.163" endtime="20200723 19:17:09.352"></status>
+</kw>
+<kw name="Close" library="hooks" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20200723 19:17:13.354" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20200723 19:17:09.353" endtime="20200723 19:17:13.354"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200723 19:17:13.354" endtime="20200723 19:17:15.519"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:17:09.352" endtime="20200723 19:17:15.519"></status>
+</kw>
+<status status="PASS" starttime="20200723 19:16:58.119" endtime="20200723 19:17:15.520" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200723 19:15:31.229" endtime="20200723 19:17:15.524"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0">Critical Tests</stat>
+<stat pass="6" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" id="s1" name="Colaborador Test">Colaborador Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,31 +1,17 @@
-*** Keywords ***
-Espera o Predict carregar
-    Wait Until Element Is Visible       ${BUTTON_ACESSAR}    timeout=5
+#-------------------------------------- HOME -----------------------------------------------
+***Keywords***
+Wait load home page
+  Wait Until Element Is Visible   css:a[href='/prediction/nova-analise/']     timeout=10
 
-Clicar em acessar
-    Click Element       ${BUTTON_ACESSAR}
+Click FEEDBACK_HOME
+  Sleep  4
+  Click Element   id:btnNovoCadastroFloating
 
-Inserir uma mensagem
-    [Arguments]     ${mensagem}
-    Input Text      ${INPUT_MENSAGEM}       ${mensagem}
+Click NOVA ANALISE 
+  Sleep  4
+  Click Element  css:a[href='/prediction/nova-analise/']
 
-Inserir um nome
-    [Arguments]     ${nome}
-    Input Text      ${INPUT_NAME}       ${nome}
+Click HISTORICO
+  Sleep  4
+  Click Element   css:a[href='/prediction/historico/']
 
-Inserir um email
-    [Arguments]     ${email}
-    Input Text      ${INPUT_EMAIL}       ${email}
-
-Clicar em enviar
-    Click Element   ${ENVIAR_MENSAGEM_BUTTON}
-
-Verificar o envio da mensagem
-    Wait Until Page Contains    Mensagem enviada com sucesso.
-    Page Should Contain         Mensagem enviada com sucesso.
-
-Verificar se não existem os botões de acessar e cadastrar-se
-    Wait Until Page Contains    Nossos Colaboradores
-
-    Page Should Not Contain Element     ${BUTTON_ACESSAR}
-    Page Should Not Contain Element     ${BUTTON_CADASTRAR}

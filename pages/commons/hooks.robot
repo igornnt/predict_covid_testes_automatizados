@@ -1,10 +1,8 @@
-*** Keywords ***
-Abrir o site do Predict
-    Open Browser        https://predictcovid.com.br/      chrome
-    Set Window Size     1080     720
-    Set Selenium Implicit Wait     10
+***Keywords***
+Open predictcovid
+  Open Browser  https://predictcovid.com.br/   chrome
+  Set Selenium Implicit Wait  5
 
-Fechar Navegador
-    Sleep       1
-    Capture Page Screenshot
-    Close Browser
+Close
+  Sleep  4
+  Close Browser

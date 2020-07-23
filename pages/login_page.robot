@@ -1,30 +1,35 @@
-*** Keywords ***
+***Keywords***
+Wait load login page
+  Wait Until Element Is Visible         id:email       timeout=5
 
-Esperamos carregar
-    Wait Until Element Is Visible       ${INPUT_EMAIL_LOGIN}    timeout=5
+Input email_login
+  Input Text   id:email    indra.araujo.santos@gmail.com
 
-Insiro meu e-mail
-    [Arguments]     ${email}
+Input email_login error
+  Input Text   id:email   teste
 
-    Input Text      ${INPUT_EMAIL_LOGIN}     ${email}
-    # Execute Javascript      document.getElementById("email").value="${email}"
+Input password_login
+  Input Text   id:password   Universe19
 
-Insiro minha senha
-    [Arguments]     ${senha}
+Input password_login error
+  Input Text  id:password  teste
 
-    Input Text      ${INPUT_SENHA_LOGIN}     ${senha}
+Click LOGIN
+  Sleep  5
+  Click Element   id:btnLogin
 
-Clico no botão de Login
-    Sleep               4
-    Click Element       ${BUTTON_REALIZAR_LOGIN}
+Wait recaptcha alert
+  Wait Until Element Is Visible    class:toast-message  timeout= 10
+  Page Should Contain  Não foi possível efetuar o login. Verifique os dados e tente Novamente.
 
-Ver um erro na tela de Login
-    Wait Until Element Is Visible       ${TOAST_ERRO_LOGIN}    timeout=5
-    Page Should Contain                 Não foi possível efetuar o login. Verifique os dados e tente Novamente.
+Wait no email input alert
+  Wait Until Element Is Visible   id:email-error  timeout= 10
+  Page Should Contain  Preencha esse campo
 
-Esperar erro na tela de login sumir
-    Wait Until Page Does Not Contain Element       ${TOAST_ERRO_LOGIN}    timeout=5
+Wait no password input alert
+  Wait Until Element Is Visible   id:password-error  timeout= 10
+  Page Should Contain  Preencha esse campo
 
-Ver um erro de email com formato inválido
-    Wait Until Element Is Visible       ${LABEL_INVALID_EMAIL_FORMAT}    timeout=5
-    Page Should Contain                Insira um e-mail válido.
+Click CADASTRAR 
+  Sleep  2
+  Click Element  css:a[href='/users/cadastrar/']
